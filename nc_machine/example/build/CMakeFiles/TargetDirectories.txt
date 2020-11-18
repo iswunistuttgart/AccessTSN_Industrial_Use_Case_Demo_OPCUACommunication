@@ -1,0 +1,10 @@
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/edit_cache.dir
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/Access_TSN_Demo.dir
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/AccessTSNLib.dir
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/open62541-generator-ids-nc.dir
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/open62541-generator-ns-nc.dir
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/open62541-generator-types-AccessTSNDemo.dir
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/open62541-generator-types-nc.dir
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/rebuild_cache.dir
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/open62541-generator-ids-AccessTSNDemo.dir
+/home/nb/eclipse-workspace/accesstsn_demoapps_opcuaserver/nc_machine/example/build/CMakeFiles/open62541-generator-ns-AccessTSNDemo.dir

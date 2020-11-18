@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="example"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\glas_opcua_server\;CMake Files\..\..\glas_opcua_server\install-debug\;CMake Files\..\..\glas_opcua_server\install-debug\lib\;CMake Files\..\..\glas_opcua_server\install-debug\lib\cmake\;CMake Files\..\..\glas_opcua_server\install-debug\lib\cmake\open62541\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="open62541-generator-types-di">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 open62541-generator-types-di"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="open62541-generator-ids-di">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 open62541-generator-ids-di"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="open62541-generator-ns-machinery">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 open62541-generator-ns-machinery"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="open62541-generator-ns-test">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 open62541-generator-ns-test"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="open62541-generator-ids-test">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 open62541-generator-ids-test"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="open62541-generator-ns-di">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 open62541-generator-ns-di"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="open62541-generator-types-machinery">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 open62541-generator-types-machinery"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="open62541-generator-ids-machinery">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 open62541-generator-ids-machinery"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="open62541-generator-types-test">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 open62541-generator-types-test"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_generated">
+				<Option output="D:/codelab/NC_Maschine/example/cmake-build-debug/libtest_generatedd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUA_ARCHITECTURE_WIN32"/>
+					<Add directory="D:/codelab/glas_opcua_server/install-debug/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_generated"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_generated/fast">
+				<Option output="D:/codelab/NC_Maschine/example/cmake-build-debug/libtest_generatedd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUA_ARCHITECTURE_WIN32"/>
+					<Add directory="D:/codelab/glas_opcua_server/install-debug/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_generated/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example">
+				<Option output="D:/codelab/NC_Maschine/example/cmake-build-debug/exampled.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUA_ARCHITECTURE_WIN32"/>
+					<Add directory="D:/codelab/glas_opcua_server/install-debug/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 example"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example/fast">
+				<Option output="D:/codelab/NC_Maschine/example/cmake-build-debug/exampled.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUA_ARCHITECTURE_WIN32"/>
+					<Add directory="D:/codelab/glas_opcua_server/install-debug/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 example/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/codelab/NC_Maschine/example/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/codelab/NC_Maschine/example/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/codelab/NC_Maschine/example/main.c">
+			<Option target="example"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/di_nodeids.h">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/di_nodeids.h.rule">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/machinery_nodeids.h">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/machinery_nodeids.h.rule">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/namespace_di_generated.c">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/namespace_di_generated.c.rule">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/namespace_di_generated.h">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/namespace_machinery_generated.c">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/namespace_machinery_generated.c.rule">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/namespace_machinery_generated.h">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/namespace_test_generated.c">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/namespace_test_generated.c.rule">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/namespace_test_generated.h">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/test_nodeids.h">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/test_nodeids.h.rule">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/types_di_generated.c.rule">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/types_di_generated.h">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/types_machinery_generated.c">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/types_machinery_generated.c.rule">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/types_machinery_generated.h">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/types_test_generated.c.rule">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/src_generated/types_test_generated.h">
+			<Option target="test_generated"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/../../glas_opcua_server/install-debug/lib/cmake/open62541/FindMbedTLS.cmake">
+			<Option virtualFolder="CMake Files\..\..\glas_opcua_server\install-debug\lib\cmake\open62541\"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/../../glas_opcua_server/install-debug/lib/cmake/open62541/open62541Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\glas_opcua_server\install-debug\lib\cmake\open62541\"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/../../glas_opcua_server/install-debug/lib/cmake/open62541/open62541ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\glas_opcua_server\install-debug\lib\cmake\open62541\"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/../../glas_opcua_server/install-debug/lib/cmake/open62541/open62541Macros.cmake">
+			<Option virtualFolder="CMake Files\..\..\glas_opcua_server\install-debug\lib\cmake\open62541\"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/../../glas_opcua_server/install-debug/lib/cmake/open62541/open62541Targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\glas_opcua_server\install-debug\lib\cmake\open62541\"/>
+		</Unit>
+		<Unit filename="D:/codelab/NC_Maschine/example/../../glas_opcua_server/install-debug/lib/cmake/open62541/open62541Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\glas_opcua_server\install-debug\lib\cmake\open62541\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

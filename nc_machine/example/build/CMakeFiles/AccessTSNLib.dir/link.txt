@@ -1,0 +1,2 @@
+/usr/bin/ar qc libAccessTSNLib.a  CMakeFiles/AccessTSNLib.dir/src_generated/namespace_nc_generated.c.o CMakeFiles/AccessTSNLib.dir/src_generated/types_nc_generated.c.o CMakeFiles/AccessTSNLib.dir/src_generated/namespace_AccessTSNDemo_generated.c.o CMakeFiles/AccessTSNLib.dir/src_generated/types_AccessTSNDemo_generated.c.o
+/usr/bin/ranlib libAccessTSNLib.a

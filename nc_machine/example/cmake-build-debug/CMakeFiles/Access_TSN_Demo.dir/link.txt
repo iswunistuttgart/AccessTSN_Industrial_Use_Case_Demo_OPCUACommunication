@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2018.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\Access_TSN_Demo.dir/objects.a
+C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\Access_TSN_Demo.dir/objects.a @CMakeFiles\Access_TSN_Demo.dir\objects1.rsp
+C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\Access_TSN_Demo.dir/objects.a -Wl,--no-whole-archive  -o Access_TSN_Demod.exe -Wl,--out-implib,libAccess_TSN_Demod.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Access_TSN_Demo.dir\linklibs.rsp

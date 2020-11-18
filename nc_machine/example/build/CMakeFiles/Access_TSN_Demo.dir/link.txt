@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/Access_TSN_Demo.dir/main.c.o  -o Access_TSN_Demo -Wl,-rpath,/usr/local/lib libAccessTSNLib.a /usr/local/lib/libopen62541.so.1.1.2 -lm -lpthread -lrt 

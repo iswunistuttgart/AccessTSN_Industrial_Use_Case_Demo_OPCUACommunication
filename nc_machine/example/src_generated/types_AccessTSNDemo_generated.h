@@ -1,4 +1,4 @@
-/* Generated from accesstsn.bsd with script /usr/local/share/open62541/tools/generate_datatypes.py * on host hyper-debian by user nb at 2020-11-18 01:27:14 */
+/* Generated from accesstsn.bsd with script /usr/local/share/open62541/tools/generate_datatypes.py * on host hyper-debian by user nb at 2020-11-19 10:54:54 */
 
 #ifndef TYPES_ACCESSTSNDEMO_GENERATED_H_
 #define TYPES_ACCESSTSNDEMO_GENERATED_H_

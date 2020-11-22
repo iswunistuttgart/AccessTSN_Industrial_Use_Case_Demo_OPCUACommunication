@@ -13,8 +13,7 @@
 
 #include "src_generated/mk_shminterface.h"
 
-struct demoreader_t
-{
+struct demoreader_t {
 	struct mk_mainoutput *mainout;
 	struct mk_maininput *mainin;
 	struct mk_additionaloutput *addout;
@@ -25,8 +24,7 @@ struct demoreader_t
 };
 
 /* Print usage message */
-static void usage(char *appname)
-{
+static void usage(char *appname) {
 	fprintf(stderr,
 			"\n"
 					"Usage: %s [options]\n"
@@ -39,15 +37,12 @@ static void usage(char *appname)
 }
 
 /* Evaluate CLI-parameters */
-void evalCLI(int argc, char *argv[0], struct demoreader_t *reader)
-{
+void evalCLI(int argc, char *argv[0], struct demoreader_t *reader) {
 	int c;
 	char *appname = strrchr(argv[0], '/');
 	appname = appname ? 1 + appname : argv[0];
-	while (EOF != (c = getopt(argc, argv, "oiaht:")))
-	{
-		switch (c)
-		{
+	while (EOF != (c = getopt(argc, argv, "oiaht:"))) {
+		switch (c) {
 		case 'o':
 			(*reader).flagmainout = true;
 			break;
@@ -68,8 +63,7 @@ void evalCLI(int argc, char *argv[0], struct demoreader_t *reader)
 		}
 	}
 	if (((*reader).flagmainout == false) && ((*reader).flagmainin == false)
-			&& ((*reader).flagaddout) == false)
-	{
+			&& ((*reader).flagaddout) == false) {
 		printf("At minium, one block of variables needs to be selected\n");
 		exit(0);
 	};
@@ -119,28 +113,25 @@ int main(int argc, char *argv[]) {
 	double x = 0.0;
 
 	// open and setup shm mapping
-		printf("setting up shared memory");
-		if (reader.flagmainout)
-		{
-			reader.mainout = (struct mk_mainoutput*) openShM(MK_MAINOUTKEY,
-					sizeof(struct mk_mainoutput));
-			if (NULL == reader.mainout)
-				reader.flagmainout = false;
-		}
-		if (reader.flagmainin)
-		{
-			reader.mainin = (struct mk_maininput*) openShM(MK_MAININKEY,
-					sizeof(struct mk_maininput));
-			if (NULL == reader.mainin)
-				reader.flagmainin = false;
-		}
-		if (reader.flagaddout)
-		{
-			reader.addout = (struct mk_additionaloutput*) openShM(MK_ADDAOUTKEY,
-					sizeof(struct mk_additionaloutput));
-			if (NULL == reader.addout)
-				reader.flagaddout = false;
-		}
+	printf("setting up shared memory");
+	if (reader.flagmainout) {
+		reader.mainout = (struct mk_mainoutput*) openShM(MK_MAINOUTKEY,
+				sizeof(struct mk_mainoutput));
+		if (NULL == reader.mainout)
+			reader.flagmainout = false;
+	}
+	if (reader.flagmainin) {
+		reader.mainin = (struct mk_maininput*) openShM(MK_MAININKEY,
+				sizeof(struct mk_maininput));
+		if (NULL == reader.mainin)
+			reader.flagmainin = false;
+	}
+	if (reader.flagaddout) {
+		reader.addout = (struct mk_additionaloutput*) openShM(MK_ADDAOUTKEY,
+				sizeof(struct mk_additionaloutput));
+		if (NULL == reader.addout)
+			reader.flagaddout = false;
+	}
 
 	while (running = true) {
 		//TODO write SHM into OPC
@@ -167,68 +158,152 @@ int main(int argc, char *argv[]) {
 		 * correct lineno (guess the actualy choosen node usualy contains a g-code command)
 		 */
 
-		UA_Variant_setScalar(&boolValue, &reader.mainin->xfault, &UA_TYPES[UA_TYPES_BOOLEAN]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_X_ACTSTATUS), boolValue);
+		UA_Variant_setScalar(&boolValue, &reader.mainin->xfault,
+				&UA_TYPES[UA_TYPES_BOOLEAN]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_X_ACTSTATUS),
+				boolValue);
 
-		UA_Variant_setScalar(&boolValue, &reader.mainout->xenable, &UA_TYPES[UA_TYPES_BOOLEAN]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_X_ISINACTIVE), boolValue);
+		UA_Variant_setScalar(&boolValue, &reader.mainout->xenable,
+				&UA_TYPES[UA_TYPES_BOOLEAN]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_X_ISINACTIVE),
+				boolValue);
 
-		UA_Variant_setScalar(&doubleValue, &reader.mainin->xpos_cur, &UA_TYPES[UA_TYPES_DOUBLE]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_X_POSDIRECT_ACTPOS), doubleValue);
+		UA_Variant_setScalar(&doubleValue, &reader.mainin->xpos_cur,
+				&UA_TYPES[UA_TYPES_DOUBLE]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_X_POSDIRECT_ACTPOS),
+				doubleValue);
 
-		UA_Variant_setScalar(&doubleValue, &reader.addout->xpos_set, &UA_TYPES[UA_TYPES_DOUBLE]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_X_POSDIRECT_CMDPOS), doubleValue);
+		UA_Variant_setScalar(&doubleValue, &reader.addout->xpos_set,
+				&UA_TYPES[UA_TYPES_DOUBLE]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_X_POSDIRECT_CMDPOS),
+				doubleValue);
 
-		UA_Variant_setScalar(&boolValue, &reader.mainin->yfault, &UA_TYPES[UA_TYPES_BOOLEAN]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Y_ACTSTATUS), boolValue);
+		UA_Variant_setScalar(&boolValue, &reader.mainin->yfault,
+				&UA_TYPES[UA_TYPES_BOOLEAN]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Y_ACTSTATUS),
+				boolValue);
 
-		UA_Variant_setScalar(&boolValue, &reader.mainout->yenable, &UA_TYPES[UA_TYPES_BOOLEAN]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Y_ISINACTIVE), boolValue);
+		UA_Variant_setScalar(&boolValue, &reader.mainout->yenable,
+				&UA_TYPES[UA_TYPES_BOOLEAN]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Y_ISINACTIVE),
+				boolValue);
 
-		UA_Variant_setScalar(&doubleValue, &reader.mainin->ypos_cur, &UA_TYPES[UA_TYPES_DOUBLE]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Y_POSDIRECT_ACTPOS), doubleValue);
+		UA_Variant_setScalar(&doubleValue, &reader.mainin->ypos_cur,
+				&UA_TYPES[UA_TYPES_DOUBLE]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Y_POSDIRECT_ACTPOS),
+				doubleValue);
 
-		UA_Variant_setScalar(&doubleValue, &reader.addout->ypos_set, &UA_TYPES[UA_TYPES_DOUBLE]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Y_POSDIRECT_CMDPOS), doubleValue);
+		UA_Variant_setScalar(&doubleValue, &reader.addout->ypos_set,
+				&UA_TYPES[UA_TYPES_DOUBLE]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Y_POSDIRECT_CMDPOS),
+				doubleValue);
 
-		UA_Variant_setScalar(&boolValue, &reader.mainin->zfault, &UA_TYPES[UA_TYPES_BOOLEAN]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Z_ACTSTATUS), boolValue);
+		UA_Variant_setScalar(&boolValue, &reader.mainin->zfault,
+				&UA_TYPES[UA_TYPES_BOOLEAN]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Z_ACTSTATUS),
+				boolValue);
 
-		UA_Variant_setScalar(&boolValue, &reader.mainout->zenable, &UA_TYPES[UA_TYPES_BOOLEAN]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Z_ISINACTIVE), boolValue);
+		UA_Variant_setScalar(&boolValue, &reader.mainout->zenable,
+				&UA_TYPES[UA_TYPES_BOOLEAN]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Z_ISINACTIVE),
+				boolValue);
 
-		UA_Variant_setScalar(&doubleValue, &reader.mainin->zpos_cur, &UA_TYPES[UA_TYPES_DOUBLE]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Z_POSDIRECT_ACTPOS), doubleValue);
+		UA_Variant_setScalar(&doubleValue, &reader.mainin->zpos_cur,
+				&UA_TYPES[UA_TYPES_DOUBLE]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Z_POSDIRECT_ACTPOS),
+				doubleValue);
 
-		UA_Variant_setScalar(&doubleValue, &reader.addout->zpos_set, &UA_TYPES[UA_TYPES_DOUBLE]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Z_POSDIRECT_CMDPOS), doubleValue);
+		UA_Variant_setScalar(&doubleValue, &reader.addout->zpos_set,
+				&UA_TYPES[UA_TYPES_DOUBLE]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCAXISLIST_AXIS_Z_POSDIRECT_CMDPOS),
+				doubleValue);
 
-		UA_Variant_setScalar(&uint8, &reader.addout->mode, &UA_TYPES[UA_TYPES_INT32]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_ACTOPERATIONMODE), uint8);
+		UA_Variant_setScalar(&uint8, &reader.addout->mode,
+				&UA_TYPES[UA_TYPES_INT32]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_ACTOPERATIONMODE),
+				uint8);
 
-		UA_Variant_setScalar(&boolValue, &reader.mainout->machinestatus, &UA_TYPES[UA_TYPES_INT32]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_ACTSTATUS), boolValue);
+		UA_Variant_setScalar(&boolValue, &reader.mainout->machinestatus,
+				&UA_TYPES[UA_TYPES_INT32]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_ACTSTATUS),
+				boolValue);
 
-		UA_Variant_setScalar(&doubleValue, &reader.addout->feedrate, &UA_TYPES[UA_TYPES_DOUBLE]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_CMDFEEDRATE), doubleValue);
+		UA_Variant_setScalar(&doubleValue, &reader.addout->feedrate,
+				&UA_TYPES[UA_TYPES_DOUBLE]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_CMDFEEDRATE),
+				doubleValue);
 
-		UA_Variant_setScalar(&doubleValue, &reader.addout->feedoverride, &UA_TYPES[UA_TYPES_DOUBLE]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_CMDOVERRIDE), doubleValue);
+		UA_Variant_setScalar(&doubleValue, &reader.addout->feedoverride,
+				&UA_TYPES[UA_TYPES_DOUBLE]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_CMDOVERRIDE),
+				doubleValue);
 
-		UA_Variant_setScalar(&int32, &reader.addout->lineno, &UA_TYPES[UA_TYPES_INT32]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCSPINDLELIST_SPINDLE_1_ACTMAINPROGRAMLINE), int32);
+		UA_Variant_setScalar(&int32, &reader.addout->lineno,
+				&UA_TYPES[UA_TYPES_INT32]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCSPINDLELIST_SPINDLE_1_ACTMAINPROGRAMLINE),
+				int32);
 
-		UA_Variant_setScalar(&boolValue, &reader.mainout->spindlebrake, &UA_TYPES[UA_TYPES_BOOLEAN]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCSPINDLELIST_SPINDLE_1_BLOCKMODE), boolValue);
+		UA_Variant_setScalar(&boolValue, &reader.mainout->spindlebrake,
+				&UA_TYPES[UA_TYPES_BOOLEAN]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCSPINDLELIST_SPINDLE_1_BLOCKMODE),
+				boolValue);
 
-		UA_Variant_setScalar(&doubleValue, &reader.mainout->spindlespeed, &UA_TYPES[UA_TYPES_DOUBLE]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCSPINDLELIST_SPINDLE_1_CMDSPEED), doubleValue);
+		UA_Variant_setScalar(&doubleValue, &reader.mainout->spindlespeed,
+				&UA_TYPES[UA_TYPES_DOUBLE]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCSPINDLELIST_SPINDLE_1_CMDSPEED),
+				doubleValue);
 
-		UA_Variant_setScalar(&boolValue, &reader.mainout->spindleenable, &UA_TYPES[UA_TYPES_BOOLEAN]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCSPINDLELIST_SPINDLE_1_ISINACTIVE), boolValue);
+		UA_Variant_setScalar(&boolValue, &reader.mainout->spindleenable,
+				&UA_TYPES[UA_TYPES_BOOLEAN]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCSPINDLELIST_SPINDLE_1_ISINACTIVE),
+				boolValue);
 
-		UA_Variant_setScalar(&uint32, &reader.addout->tool, &UA_TYPES[UA_TYPES_UINT32]);
-		UA_Server_writeValue(pServer, UA_NODEID_NUMERIC(3, UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_TOOLID), uint32);
+		UA_Variant_setScalar(&uint32, &reader.addout->tool,
+				&UA_TYPES[UA_TYPES_UINT32]);
+		UA_Server_writeValue(pServer,
+				UA_NODEID_NUMERIC(3,
+						UA_ACCESSTSNDEMOID_ACCESSTSN_CNC_CNCCHANNELLIST_CHANNEL_1_TOOLID),
+				uint32);
 
 		/* TODO add missing values
 		 *
@@ -238,7 +313,7 @@ int main(int argc, char *argv[]) {
 		 * yvel_set
 		 * zvel_set
 		 * estopstatus
-		 * uptime
+		 * uptime entfällt
 		 * xhome
 		 * yhome
 		 * zhome

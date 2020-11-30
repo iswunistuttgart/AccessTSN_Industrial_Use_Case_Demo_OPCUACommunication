@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2018.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=D:/codelab/glas_opcua_server/install-debug -DCMAKE_VERBOSE_MAKEFILE=ON -G "CodeBlocks - MinGW Makefiles" D:\codelab\NC_Maschine\example
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/codelab/NC_Maschine/example/cmake-build-debug

@@ -1,0 +1,31 @@
+###########################
+# UaModeler Project File  #
+# Generated at 03.11.2020 #
+###########################
+
+PROJECTNAME = AccessTSN_Demo
+
+TEMPLATESET = ($TEMPLATES)/modeling/v1_0/t0/modeling.tt2set
+
+MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
+    ($MODELS)/Opc.Ua.Di.NodeSet2.ua \
+    ../glas_opcua_server/install-debug/share/open62541/tools/ua-nodeset/CNC/Opc.Ua.CNC.NodeSet.ua \
+    accesstsn_demo.ua
+
+COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
+    ($MODELS)/Opc.Ua.Di.NodeSet2.ua: #0000ff\
+    ../glas_opcua_server/install-debug/share/open62541/tools/ua-nodeset/CNC/Opc.Ua.CNC.NodeSet.ua: #0000ff\
+    accesstsn_demo.ua: #008000
+
+OUTPUTPATH = C:/tmp
+
+GENERATE += accesstsn_demo.ua
+
+LOCKEDMODELS += ($MODELS)/Opc.Ua.Di.NodeSet2.ua
+
+NODEACCESSINFOROLES += Administrator \
+    SecurityAdmin \
+    ConfigurationAdmin \
+    Operator \
+    Observer
+

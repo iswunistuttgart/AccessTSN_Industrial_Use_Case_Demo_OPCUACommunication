@@ -1,4 +1,4 @@
-/* Generated from Opc.Ua.CNC.NodeSet.bsd with script /usr/local/share/open62541/tools/generate_datatypes.py * on host hyper-debian by user nb at 2020-11-19 10:54:48 */
+/* Generated from Opc.Ua.CNC.NodeSet.bsd with script /usr/local/share/open62541/tools/generate_datatypes.py * on host hyper-debian by user nb at 2020-11-26 02:54:57 */
 
 #ifndef TYPES_NC_GENERATED_H_
 #define TYPES_NC_GENERATED_H_

@@ -3,4 +3,4 @@
 	url = https://github.com/open62541/open62541.git
 [submodule "accesstsn_demoapps_common"]
 	path = accesstsn_demoapps_common
-	url = https://git.isw.uni-stuttgart.de/projekte/forschung/2018_AIF_AccessTSN/accesstsn_demoapps/accesstsn_demoapps_common.git
+	url = ../AccessTSN_Industrial_Use_Case_Demo_Common.git

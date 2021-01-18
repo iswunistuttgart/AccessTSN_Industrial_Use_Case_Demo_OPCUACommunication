@@ -1,4 +1,4 @@
-# AccessTSN Industrial Use Case Demo - RTDriveControl
+# AccessTSN Industrial Use Case Demo - OPC UA Communication
 This is a demonstration to give an example on how to use Linux with the current support for Time Sensitive Networking (TSN) as an industrial endpoint. For this purpose the components of this demonstration form a converged network use case in an industrial setting. 
 
 The Use Case Demonstration is aimed at the AccessTSN Endpoint Image and is tested with but should also work independently from the image.

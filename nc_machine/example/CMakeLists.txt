@@ -33,11 +33,11 @@ add_library(AccessTSNLib
         src_generated/types_nc_generated.h
         src_generated/types_nc_generated.c
         src_generated/nc_nodeids.h
-        src_generated/namespace_AccessTSNDemo_generated.c
-        src_generated/namespace_AccessTSNDemo_generated.h
-        src_generated/types_AccessTSNDemo_generated.h
-        src_generated/types_AccessTSNDemo_generated.c
-        src_generated/AccessTSNDemo_nodeids.h
+        src_generated/namespace_accesstsndemo_generated.c
+        src_generated/namespace_accesstsndemo_generated.h
+        src_generated/types_accesstsndemo_generated.h
+        src_generated/types_accesstsndemo_generated.c
+        src_generated/accesstsndemo_nodeids.h
         )
         
 target_link_libraries(AccessTSNLib PUBLIC open62541::open62541)

@@ -15,6 +15,7 @@ The main repository for AccessTSN Industrial Use Case Demo can be found on Githu
 Get the repository and all submodules with:
 git clone --recurse-submodules <INSERT_REPO>
 Install open62541 framework according to [open62541 documentation](https://open62541.org/doc/open62541-current.pdf). Do not install the framework into the this git project or you might encounter errors when you try running the server.
+Please checkout and install version 1.2.1 either through a checkout of the corresponding tag or through specifying the version on the cmake option *-DOPEN62541_VERSION=v1.2.1*. 
 Switch to directory `_/nc_machine/example_`
 copy file `__/src_generated/Opc.Ua.CNC.NodeSet.bsd` to `/usr/local/share/open62541/tools/ua-nodeset/CNC/_`
 Run command `cmake -B build`

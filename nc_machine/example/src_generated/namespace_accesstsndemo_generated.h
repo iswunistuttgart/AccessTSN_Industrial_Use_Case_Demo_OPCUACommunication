@@ -17,7 +17,7 @@
 
 _UA_BEGIN_DECLS
 
-extern UA_StatusCode namespace_AccessTSNDemo_generated(UA_Server *server);
+extern UA_StatusCode namespace_accesstsndemo_generated(UA_Server *server);
 
 _UA_END_DECLS
 

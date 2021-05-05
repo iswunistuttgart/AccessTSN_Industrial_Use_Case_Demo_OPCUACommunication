@@ -4,7 +4,7 @@
 #ifndef TYPES_ACCESSTSNDEMO_GENERATED_HANDLING_H_
 #define TYPES_ACCESSTSNDEMO_GENERATED_HANDLING_H_
 
-#include "types_AccessTSNDemo_generated.h"
+#include "types_accesstsndemo_generated.h"
 
 _UA_BEGIN_DECLS
 

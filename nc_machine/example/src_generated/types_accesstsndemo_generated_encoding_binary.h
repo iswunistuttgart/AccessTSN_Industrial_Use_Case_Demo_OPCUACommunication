@@ -8,7 +8,7 @@
 # include "open62541.h"
 #else
 # include "ua_types_encoding_binary.h"
-# include "types_AccessTSNDemo_generated.h"
+# include "types_accesstsndemo_generated.h"
 #endif
 
 

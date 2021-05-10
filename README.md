@@ -15,6 +15,7 @@ The main repository for AccessTSN Industrial Use Case Demo can be found on Githu
 Get the repository and all submodules with:
 git clone --recurse-submodules <INSERT_REPO>
 Install open62541 framework according to [open62541 documentation](https://open62541.org/doc/open62541-current.pdf). Do not install the framework into the this git project or you might encounter errors when you try running the server.
+Please checkout and install version 1.2.1 either through a checkout of the corresponding tag or through specifying the version on the cmake option *-DOPEN62541_VERSION=v1.2.1*. Also when building the open62541 framework activate the multithreading support with the cmake option *-DUA_MULTITHREADING=100*.
 Switch to directory `_/nc_machine/example_`
 copy file `__/src_generated/Opc.Ua.CNC.NodeSet.bsd` to `/usr/local/share/open62541/tools/ua-nodeset/CNC/_`
 Run command `cmake -B build`
@@ -31,6 +32,12 @@ UaExpert can be obtained [here](https://www.unified-automation.com/de/downloads/
 If you have no application writing into the shared memory defined in `mk_shminterface` you can build and start the application `demowriter` in directory `accesstsn_demoapps_common/demo`
 
 # Tested Version
+Version v0.52 is tested with
+Debian GNU/Linux 10 (buster) preempt-rt
+open62541 @ 4038a31 (tag v1.2.1 )
+accesstsn_demoapps_common @ a3a45fdf
+UaExpert-1.5.1-331-x86_64.AppImage
+
 The initial released version is tested with
 Debian GNU/Linux 10 (buster)
 open62541 @ f85adb7b

@@ -4,8 +4,8 @@
 #include <stdint.h>
 
 #include "src_generated/namespace_nc_generated.h"
-#include "src_generated/namespace_AccessTSNDemo_generated.h"
-#include "src_generated/AccessTSNDemo_nodeids.h"
+#include "src_generated/namespace_accesstsndemo_generated.h"
+#include "src_generated/accesstsndemo_nodeids.h"
 
 #include <open62541/server_config_default.h>
 #include <open62541/types.h>
@@ -139,7 +139,7 @@ int main(int argc, char *argv[]) {
 	UA_ServerConfig_setMinimal(pConfig, port, NULL);
 
 	namespace_nc_generated(pServer);
-	namespace_AccessTSNDemo_generated(pServer);
+	namespace_accesstsndemo_generated(pServer);
 
 	UA_Server_run_startup(pServer);
 	bool running = true;
